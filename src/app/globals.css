@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf5f0;
+  --surface: #ffffff;
+  --blush: #fff0f3;
+  --rose: #fcf6f5;
+  --accent: #e07a5f;
+  --accent-hover: #d36c52;
+  --sage: #84a59d;
+  --highlight: #f7cad0;
+  --peach: #f8ad9d;
+  --ink: #2b2a33;
+  --muted: #3d405b;
+  --line: #eadfd6;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-blush: var(--blush);
+  --color-rose: var(--rose);
+  --color-accent: var(--accent);
+  --color-sage: var(--sage);
+  --color-highlight: var(--highlight);
+  --color-peach: var(--peach);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --font-sans: var(--font-outfit);
+  --font-serif: var(--font-cormorant);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--ink);
+  font-family: var(--font-outfit), system-ui, sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
