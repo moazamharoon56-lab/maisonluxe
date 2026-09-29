@@ -21,7 +21,7 @@ export function CheckoutForm() {
   const [error, setError] = useState("");
   const total = cartTotal(items);
   const whatsappNumber = waDigits(
-    process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "",
+    process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "923315533207",
   );
 
   const preview = useMemo(
